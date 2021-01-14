@@ -71,13 +71,14 @@ input[type=submit], button {
     grid-template-columns: 80px auto;
     margin: 20px auto;
     width: 75%;
+    word-wrap: 400px;
 }
 .description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 125px;
-    width: 80vw;
+    width: 70vw;
     padding: 5px;
     padding-left: 15px;
     text-align: left;
@@ -97,7 +98,14 @@ input[type=submit], button {
 }
 #pricing {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+    #pricing {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 .product {
     border: 2px solid black;

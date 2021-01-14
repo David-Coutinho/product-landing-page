@@ -34,7 +34,7 @@ nav ul {
     list-style: none;
     padding: 0 20px;
 }
-#nav-link, #nav-link:visited {
+.nav-link, .nav-link:visited {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
